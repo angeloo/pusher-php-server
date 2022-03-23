@@ -362,7 +362,7 @@ class Pusher implements LoggerAwareInterface, PusherInterface
         $response['body'] = curl_exec($ch);
         $response['status'] = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 
-        print_r curl_getinfo($ch);
+        print_r(curl_getinfo($ch));
         print curl_error($ch);
 
 
