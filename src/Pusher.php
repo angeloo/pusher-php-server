@@ -529,8 +529,6 @@ class Pusher implements LoggerAwareInterface, PusherInterface
 
         curl_setopt($ch, CURLOPT_POSTFIELDS, $post_value);
 
-        dd($ch);
-
         $response = $this->exec_curl($ch);
 
         dd($response);
